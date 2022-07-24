@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background: #fff;
+    color: #182641;
+}
+
+.myContainer {
+    min-height: 100vh;
+}
+
+.area {
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+    border: 1px solid #c2d2f3;
+    position: relative;
+    overflow: hidden;
+}
+
+#air1 {
+    width: 260px;
+    position: absolute;
+    bottom: -400px;
+    right: -400px;
+    opacity: .6;
+    transform: rotate3d(0, 0, 1, -20deg);
+    /* animation: air1Move 5s infinite; */
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #c2d2f3;
+    position: absolute;
+}
+
+.box1 {
+    top: 0;
+    left: 0;
+    animation: b1Move 1s infinite;
+}
+
+.box2 {
+    left: 0;
+    bottom: 0;
+    animation: b2Move 1s infinite;
+}
+
+.box3 {
+    bottom: 0;
+    right: 0;
+    animation: b3Move 1s infinite;
+}
+
+.box4 {
+    right: 0;
+    top: 0;
+    animation: b4Move 1s infinite;
+}
+
+@keyframes b1Move {
+    from {
+        top: 0px;
+        left: 0px;
+    }
+
+    to {
+        top: 400px;
+        left: 0px;
+    }
+}
+
+@keyframes b2Move {
+    from {
+        left: 0px;
+        bottom: 0px;
+    }
+
+    to {
+        left: 400px;
+        bottom: 0px;
+    }
+}
+
+@keyframes b3Move {
+    from {
+        top: 400px;
+        right: 0px;
+    }
+
+    to {
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@keyframes b4Move {
+    from {
+        right: 0px;
+        top: 0px;
+    }
+
+    to {
+        right: 400px;
+        top: 0px;
+    }
+}
+
+
+
+@keyframes air1Move {
+    0% {
+        right: 0%;
+        top: 400px;
+    }
+
+    25% {
+        right: 15%;
+        top: 300px;
+    }
+
+    50% {
+        right: 30%;
+        top: 200px;
+    }
+
+    75% {
+        right: 75%;
+        top: 300px;
+    }
+
+    100% {
+        right: 100%;
+        top: 400px;
+    }
+
+    /* from {
+        right: -300px;
+        top: 0px;
+    }
+
+    to {
+        right: 1500px;
+        top: 0px;
+    } */
+}
